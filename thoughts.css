@@ -59,6 +59,8 @@ body {
   font-family: "EB Garamond", serif;
   display: inline-block;
   margin-bottom: 50px;
+    font-size: 1em;
+  font-weight: 100;
 }
 
 /* Hover effect */
