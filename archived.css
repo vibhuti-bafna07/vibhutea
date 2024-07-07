@@ -1,3 +1,5 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
 body {
     font-family: "EB Garamond", serif;
     margin: 0;
@@ -7,9 +9,10 @@ body {
     width: 100%;
     min-height: 100vh;
     box-sizing: border-box;
-    text-rendering: optimizeLegibility;
+    font-weight: 400; /* Adjust weight as needed */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
 
   .eb-garamond- {
