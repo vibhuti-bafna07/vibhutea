@@ -108,7 +108,7 @@ body {
 }
 
 .video-thumbnail::before {
-  content: "hover";
+  content: "\25B6";
   position: absolute;
   top: 50%;
   left: 50%;
