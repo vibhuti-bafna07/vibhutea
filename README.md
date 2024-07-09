@@ -1,2 +1,2 @@
 # vibhutea
-personal website with shit tonne of things about me
+personal website with sm about me
