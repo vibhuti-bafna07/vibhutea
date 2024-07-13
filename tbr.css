@@ -6,6 +6,8 @@ body {
     color: #202020; /* Dark grey text */
     width: 100%;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased; /* for WebKit (Safari, Chrome) */
+    -moz-osx-font-smoothing: grayscale; /* for Firefox on macOS */
   }
 
   .eb-garamond- {
