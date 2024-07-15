@@ -53,20 +53,6 @@ body {
   .hover:hover{
     color: #D61500;
   }
-
-  .fade-in-section {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-    text-align: center;
-    margin: 50px 0;
-    padding: 20px;
-  }
-  
-  .fade-in-section.is-visible {
-    opacity: 1;
-    transform: none;
-  }
   
   /* Styles for buttons */
 .button {
@@ -137,4 +123,32 @@ body {
 
 .video-thumbnail:hover::before{
   opacity: 0;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  margin: 50px 0;
+  padding: 20px;
+  background-color: #e0e0e0;
+  text-align: center;
+}
+
+.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media only screen and (max-width: 375px) {
+  .fade-in-section {
+      opacity: 1; /* Set opacity to 1 for testing */
+      transform: none; /* Set transform to none for testing */
+  }
+
+  .is-visible {
+      /* Ensure the styles are the same for testing */
+      opacity: 1;
+      transform: none;
+  }
 }
