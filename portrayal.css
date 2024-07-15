@@ -71,15 +71,6 @@ body {
   color: white; /* White text */
 }
 
-.button-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    gap: 2vw; /* Adjust gap between buttons */
-}
-
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -97,6 +88,7 @@ body {
 
 .gallery-item:hover{
   transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 .gallery-item img,
