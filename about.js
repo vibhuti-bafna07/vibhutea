@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+     // Fade-in sections
     const faders = document.querySelectorAll('.fade-in-section');
 
     const appearOptions = {
