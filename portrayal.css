@@ -22,21 +22,6 @@ body {
       background-color: #202020;
       color: white;
     }
-    
-    .fade-in-section {
-      opacity: 1;
-      transform: translateY(20px);
-      transition: opacity 1s ease-out, transform 1s ease-out;
-      text-align: center;
-      margin: 50px 0;
-      padding: 20px;
-    }
-
-    .fade-in-section.is-visible {
-      opacity: 1;
-      transform: none;
-    }
-
     }
 
   .eb-garamond- {
@@ -150,7 +135,7 @@ body {
 }
 
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 375px) {
   .gallery {
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
       grid-gap: 12px;

@@ -50,4 +50,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // Debug: Check if script is fully loaded
     console.log('Script loaded successfully.');
 });
-
