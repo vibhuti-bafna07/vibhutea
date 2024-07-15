@@ -7,14 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
         rootMargin: "0px 0px -50px 0px"
     };
 
-    // Debug: Log if IntersectionObserver is available
-    console.log('IntersectionObserver supported:', 'IntersectionObserver' in window);
-
     if ('IntersectionObserver' in window) {
         const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
             entries.forEach(entry => {
-                // Debug: Log each entry's intersection status
-                console.log('Entry intersecting:', entry.isIntersecting, entry.target);
                 if (!entry.isIntersecting) {
                     return;
                 } else {
@@ -39,14 +34,22 @@ document.addEventListener('DOMContentLoaded', () => {
     if (videos.length) {
         videos.forEach(video => {
             video.muted = true; // Ensure video is muted to allow autoplay
-            video.addEventListener('mouseover', () => video.play());
-            video.addEventListener('mouseout', () => {
-                video.pause();
-                video.currentTime = 0;
-            });
+            const videoOptions = {
+                threshold: 0.5
+            };
+            const playOnScroll = new IntersectionObserver(function (entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        video.play();
+                    } else {
+                        video.pause();
+                        video.currentTime = 0;
+                    }
+                });
+            }, videoOptions);
+            playOnScroll.observe(video);
         });
     }
 
-    // Debug: Check if script is fully loaded
     console.log('Script loaded successfully.');
 });
