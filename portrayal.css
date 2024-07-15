@@ -33,7 +33,7 @@ body {
   }
 
   .hover:hover{
-    color: #e34a65;
+    color: #D61500;
   }
 
   .fade-in-section {
@@ -62,7 +62,7 @@ body {
   display: inline-block;
   margin-bottom: 50px;
   font-size: 1em;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 /* Hover effect */
@@ -157,7 +157,7 @@ body {
 }
 
 .music-button:hover {
-  background-color: #e82146;
+  background-color: #D61500;
   color: rgb(245, 245, 245);
 }
 
@@ -166,6 +166,6 @@ body {
 }
 
 .music-button.playing:hover {
-  background-color: #e34a65;
+  background-color: #D61500;
   color: rgb(245, 245, 245);
 }

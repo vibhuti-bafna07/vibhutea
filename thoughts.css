@@ -34,7 +34,7 @@ body {
   }
 
   .hover:hover{
-    color: #e34a65;
+    color: #D61500;
   }
 
   .fade-in-section {
@@ -63,7 +63,7 @@ body {
   display: inline-block;
   margin-bottom: 50px;
     font-size: 1em;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 /* Hover effect */
@@ -80,4 +80,3 @@ body {
     display: flex;
     gap: 2vw; /* Adjust gap between buttons */
 }
-

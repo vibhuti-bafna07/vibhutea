@@ -11,6 +11,7 @@ body {
   overflow: auto;
   -webkit-font-smoothing: antialiased; /* for WebKit (Safari, Chrome) */
   -moz-osx-font-smoothing: grayscale; /* for Firefox on macOS */
+  text-rendering: optimizeLegibility;
 }
 
 .text {
@@ -28,7 +29,7 @@ body {
 
 .heading {
   font-style: italic;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 24px;
 }
 
@@ -58,7 +59,7 @@ body {
   display: inline-block;
   margin-bottom: 50px;
   font-size: 1em;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 /* Hover effect */
