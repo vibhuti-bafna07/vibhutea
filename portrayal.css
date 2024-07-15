@@ -2,7 +2,7 @@ body {
     font-family: "EB Garamond", serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(245, 245, 245);
+    background-color:#f5f5f5;
     color: #202020; /* Dark grey text */
     width: 100%;
     min-height: 100vh;
@@ -138,6 +138,7 @@ body {
 .is-visible {
   opacity: 1;
   transform: none;
+  background-color: #f5f5f5;
 }
 
 @media only screen and (max-width: 375px) {
