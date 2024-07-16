@@ -78,7 +78,7 @@ body {
 /* Hover effect */
 .button:hover {
   background-color: #202020; /* Dark grey background */
-  color: white; /* White text */
+  color: #f5f5f5; /* White text */
 }
 
 .footer {
