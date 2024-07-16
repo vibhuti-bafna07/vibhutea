@@ -110,8 +110,7 @@ body {
 }
 
 .gallery-item img,
-.gallery-item video,
-.photocard img {
+.gallery-item video{
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -133,6 +132,7 @@ body {
   z-index: 1;
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
 }
 
 .video-thumbnail:hover::before{
