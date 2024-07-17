@@ -119,6 +119,10 @@ body {
 .video-thumbnail {
   position: relative;
 }
+.video-thumbnail video {
+  display: block;
+  width: 100%;
+}
 
 .video-thumbnail::before {
   content: 'love';
