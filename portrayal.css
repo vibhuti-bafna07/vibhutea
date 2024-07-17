@@ -39,6 +39,14 @@ body {
       margin: 0 auto;
       width: calc(100% - 10px);
     }
+
+    .video-thumbnail {
+      position: relative;
+    }
+    .video-thumbnail video {
+      display: block;
+      width: 100%;
+    }
   }
 
 
